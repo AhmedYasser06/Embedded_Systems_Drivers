@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=drivers
+PROJECTNAME=Embedded_Drivers
 
 # Active Configuration
 DEFAULTCONF=default

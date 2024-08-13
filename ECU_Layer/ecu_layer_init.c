@@ -7,6 +7,8 @@
 
 #include "ecu_layer_init.h"
 
+
+/*
 chr_lcd_4bit_t lcd_1 = {
     
     .lcd_rs.port =PORTC_INDEX,
@@ -97,6 +99,9 @@ chr_lcd_8bit_t lcd_2 = {
     
     
 };
+ *
+*/
+
 
 void ecu_layer_intialize(void){
     Std_ReturnType ret = E_NOT_OK;
