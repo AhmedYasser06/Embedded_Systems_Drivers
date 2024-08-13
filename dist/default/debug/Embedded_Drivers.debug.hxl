@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\DELLPR~1\AppData\Local\Temp\xcAsmio.\driver_tmp_3.o
+ C:\Users\DELLPR~1\AppData\Local\Temp\xcAs384.\driver_tmp_3.o
  -Odist/default/debug\Embedded_Drivers.debug.hex
  -logfile=dist/default/debug\Embedded_Drivers.debug.hxl
  -addressing=1
@@ -9,13 +9,13 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 5h		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAsmio.\driver_tmp_3.o)
-  8h - 11h		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAsmio.\driver_tmp_3.o)
-  1000h - 1014h		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAsmio.\driver_tmp_3.o)
-  1016h - 147Ah		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAsmio.\driver_tmp_3.o)
-  147Ch - 154Bh		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAsmio.\driver_tmp_3.o)
-  200000h - 200007h		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAsmio.\driver_tmp_3.o)
-  300000h - 30000Dh		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAsmio.\driver_tmp_3.o)
+  0h - 5h		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAs384.\driver_tmp_3.o)
+  8h - 11h		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAs384.\driver_tmp_3.o)
+  1000h - 1014h		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAs384.\driver_tmp_3.o)
+  1016h - 147Ah		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAs384.\driver_tmp_3.o)
+  147Ch - 154Bh		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAs384.\driver_tmp_3.o)
+  200000h - 200007h		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAs384.\driver_tmp_3.o)
+  300000h - 30000Dh		(C:\Users\DELLPR~1\AppData\Local\Temp\xcAs384.\driver_tmp_3.o)
  Unused ranges:
   6h - 7h
   12h - FFFh
@@ -27,7 +27,7 @@
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\DELLPR~1\AppData\Local\Temp\xcAsmio.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\DELLPR~1\AppData\Local\Temp\xcAs384.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------

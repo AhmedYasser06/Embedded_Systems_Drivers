@@ -4866,7 +4866,9 @@ Std_ReturnType convert_uint32_to_string(uint32 value, uint8 *str);
 
 void ecu_layer_intialize(void);
 # 8 "ECU_Layer/ecu_layer_init.c" 2
-# 106 "ECU_Layer/ecu_layer_init.c"
+
+
+
 void ecu_layer_intialize(void){
     Std_ReturnType ret = (Std_ReturnType)0x00;
 
