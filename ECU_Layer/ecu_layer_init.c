@@ -10,5 +10,4 @@
 
 void ecu_layer_intialize(void){
     Std_ReturnType ret = E_NOT_OK;
-  
 }

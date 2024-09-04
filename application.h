@@ -10,6 +10,8 @@
 
 /* Section : Includes */
 #include "ECU_Layer/ecu_layer_init.h"
+#include "MCAL_Layer/Interrupt/mcal_external_interrupt.h"
+#include "MCAL_Layer/ADC/hal_adc.h"
 
 /* Section: Macro Declarations */
 

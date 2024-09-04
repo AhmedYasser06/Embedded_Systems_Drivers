@@ -120,7 +120,7 @@ Std_ReturnType MSSP_I2C_Master_Send_Start(const mssp_i2c_t *i2c_obj){
         }
     }
     return ret;
-}
+}  
 
 Std_ReturnType MSSP_I2C_Master_Send_Repeated_Start(const mssp_i2c_t *i2c_obj){
     Std_ReturnType ret = E_NOT_OK;
@@ -144,7 +144,7 @@ Std_ReturnType MSSP_I2C_Master_Send_Stop(const mssp_i2c_t *i2c_obj){
     if(NULL == i2c_obj){
         ret = E_NOT_OK;
     }
-    else{
+    else{  
         /* Initiates Stop condition on SDA and SCL pins */
         SSPCON2bits.PEN = 1; /* Initiates Stop condition on SDA and SCL pins. Automatically cleared by hardware */
         /* Wait for the completion of the Stop condition */
@@ -262,7 +262,7 @@ static inline void MSSP_I2C_Mode_GPIO_CFG(void){
     TRISCbits.TRISC4 = 1; /* Serial data (SDA) is Input */
 }
 
-static inline void I2C_Master_Mode_Clock_Configurations(const mssp_i2c_t *i2c_obj){
+static inline void I2C_Master_Mode_Clock_Configurations(const mssp_i2c_t *i2c_obj){  
     /*  I2C Master mode, clock = FOSC/(4 * (SSPADD + 1)) */
     SSPCON1bits.SSPM = i2c_obj->i2c_cfg.i2c_mode_cfg;
     SSPADD = (uint8)(((_XTAL_FREQ / 4.0) / i2c_obj->i2c_clock) - 1);

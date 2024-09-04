@@ -4714,8 +4714,8 @@ typedef struct{
 
 typedef struct{
 
-
-
+    void (* MSSP_SPI_InterruptHandler)(void);
+    interrupt_priority_cfg priority;
 
     uint8 spi_mode;
     SPI_Control_Config spi_config;
@@ -4732,7 +4732,7 @@ Std_ReturnType SPI_Read_Byte_NonBlocking(const SPI_Config *Config, uint8 *_data)
 
 
 
-
+    static void (*SPI_InterruptHandler)(void) = ((void*)0);
 
 
 static void MSSP_SPI_Interrupt_Init(const SPI_Config *Config);
@@ -4784,7 +4784,7 @@ Std_ReturnType SPI_DeInit(const SPI_Config *Config){
         (SSPCON1bits.SSPEN = 0);
 
 
-
+        (PIE1bits.SSPIE = 0);
 
     }
 
@@ -4830,15 +4830,24 @@ Std_ReturnType SPI_Read_Byte_NonBlocking(const SPI_Config *Config, uint8 *_data)
 
 void MSSP_SPI_ISR(void){
 
-
-
-
-
+    (PIR1bits.SSPIF = 0);
+    if(SPI_InterruptHandler){
+        SPI_InterruptHandler();
+    }
 
 }
 
 static void MSSP_SPI_Interrupt_Init(const SPI_Config *Config){
-# 139 "MCAL_Layer/SPI/hal_spi.c"
+
+
+    (PIE1bits.SSPIE = 1);
+    (PIR1bits.SSPIF = 0);
+    SPI_InterruptHandler = Config->MSSP_SPI_InterruptHandler;
+# 135 "MCAL_Layer/SPI/hal_spi.c"
+    (INTCONbits.GIE = 1);
+    (INTCONbits.PEIE = 1);
+
+
 }
 
 static void MSSP_SPI_Msster_Mode_GPIO_PIN_Configurations(const SPI_Config *Config){

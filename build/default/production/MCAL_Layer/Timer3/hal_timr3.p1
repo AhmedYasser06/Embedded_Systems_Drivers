@@ -3,7 +3,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v F3033 `(v ~T0 @X0 0 tf ]
 [v F3012 `(v ~T0 @X0 0 tf ]
 "17 MCAL_Layer/Timer3/hal_timr3.c
-[; ;MCAL_Layer/Timer3/hal_timr3.c: 17: Std_ReturnType Timer3_Init(const timer3_t *_timer){
+[; ;MCAL_Layer/Timer3/hal_timr3.c: 17:   Std_ReturnType Timer3_Init(const timer3_t *_timer){
 [c E3006 0 1 .. ]
 [n E3006 . INTERRUPT_LOW_PRIORITY INTERRUPT_HIGH_PRIORITY  ]
 "50 MCAL_Layer/Timer3/hal_timr3.h
@@ -521,7 +521,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `us
 ]
 "17
-[; ;MCAL_Layer/Timer3/hal_timr3.c: 17: Std_ReturnType Timer3_Init(const timer3_t *_timer){
+[; ;MCAL_Layer/Timer3/hal_timr3.c: 17:   Std_ReturnType Timer3_Init(const timer3_t *_timer){
 [v _Timer3_Init `(uc ~T0 @X0 1 ef1`*CS274 ]
 {
 [e :U _Timer3_Init ]

@@ -1,12 +1,19 @@
 Version 4.0 HI-TECH Software Intermediate Code
+[v F3040 `(v ~T0 @X0 0 tf ]
+[v F3041 `(v ~T0 @X0 0 tf ]
+[v F3018 `(v ~T0 @X0 0 tf ]
+"16 MCAL_Layer/SPI/hal_spi.c
+[; ;MCAL_Layer/SPI/hal_spi.c: 16: Std_ReturnType SPI_Init(const SPI_Config *Config){
+[c E3006 0 1 .. ]
+[n E3006 . INTERRUPT_LOW_PRIORITY INTERRUPT_HIGH_PRIORITY  ]
 "54 MCAL_Layer/SPI/hal_spi.h
 [; ;MCAL_Layer/SPI/hal_spi.h: 54: typedef struct{
 [s S274 :2 `uc 1 :2 `uc 1 :2 `uc 1 :2 `uc 1 ]
 [n S274 . ClockPolarity SampleSelect ClockSelect Reserved ]
 "61
 [; ;MCAL_Layer/SPI/hal_spi.h: 61: typedef struct{
-[s S275 `uc 1 `S274 1 ]
-[n S275 . spi_mode spi_config ]
+[s S275 `*F3018 1 `E3006 1 `uc 1 `S274 1 ]
+[n S275 . MSSP_SPI_InterruptHandler priority spi_mode spi_config ]
 "4737 C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h
 [; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 4737:     struct {
 [s S185 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -86,7 +93,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12 MCAL_Layer/SPI/hal_spi.c
 [; ;MCAL_Layer/SPI/hal_spi.c: 12: static void MSSP_SPI_Interrupt_Init(const SPI_Config *Config);
 [v _MSSP_SPI_Interrupt_Init `(v ~T0 @X0 0 sf1`*CS275 ]
-"5029 C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h
+"2503 C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h
+[; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 2503:     struct {
+[s S86 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S86 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE PSPIE ]
+"2513
+[; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 2513:     struct {
+[s S87 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S87 . . TX1IE RC1IE ]
+"2502
+[; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 2502: typedef union {
+[u S85 `S86 1 `S87 1 ]
+[n S85 . . . ]
+"2519
+[; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 2519: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
+[v _PIE1bits `VS85 ~T0 @X0 0 e@3997 ]
+"5029
 [; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 5029: extern volatile unsigned char SSPBUF __attribute__((address(0xFC9)));
 [v _SSPBUF `Vuc ~T0 @X0 0 e@4041 ]
 "2580
@@ -104,6 +126,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2596
 [; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 2596: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
 [v _PIR1bits `VS88 ~T0 @X0 0 e@3998 ]
+[v F3069 `(v ~T0 @X0 0 tf ]
+"6380
+[; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 6380:     struct {
+[s S258 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S258 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"6390
+[; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 6390:     struct {
+[s S259 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S259 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"6400
+[; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 6400:     struct {
+[s S260 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S260 . . GIEL GIEH ]
+"6379
+[; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 6379: typedef union {
+[u S257 `S258 1 `S259 1 `S260 1 ]
+[n S257 . . . . ]
+"6406
+[; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 6406: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
+[v _INTCONbits `VS257 ~T0 @X0 0 e@4082 ]
 "66 MCAL_Layer/SPI/../../MCAL_Layer/GPIO/hal_gpio.h
 [s S273 :3 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S273 . port pin direction logic ]
@@ -528,7 +570,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "6715
 [; ;C:/Users/DeLL PRE 3530/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4620.h: 6715: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"16 MCAL_Layer/SPI/hal_spi.c
+"9 MCAL_Layer/SPI/hal_spi.c
+[; ;MCAL_Layer/SPI/hal_spi.c: 9:     static void (*SPI_InterruptHandler)(void) = ((void*)0);
+[v _SPI_InterruptHandler `*F3040 ~T0 @X0 1 s ]
+[i _SPI_InterruptHandler
+-> -> -> 0 `i `*v `*F3041
+]
+"16
 [; ;MCAL_Layer/SPI/hal_spi.c: 16: Std_ReturnType SPI_Init(const SPI_Config *Config){
 [v _SPI_Init `(uc ~T0 @X0 1 ef1`*CS275 ]
 {
@@ -559,10 +607,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _SSPCON1bits 0 2 -> -> 0 `i `uc ]
 "26
 [; ;MCAL_Layer/SPI/hal_spi.c: 26:         SSPCON1bits.SSPM = Config->spi_mode;
-[e = . . _SSPCON1bits 0 0 . *U _Config 0 ]
+[e = . . _SSPCON1bits 0 0 . *U _Config 2 ]
 "28
 [; ;MCAL_Layer/SPI/hal_spi.c: 28:         if((Config->spi_mode == 0) || (Config->spi_mode == 1) ||
-[e $ ! || || || == -> . *U _Config 0 `i -> 0 `i == -> . *U _Config 0 `i -> 1 `i == -> . *U _Config 0 `i -> 2 `i == -> . *U _Config 0 `i -> 3 `i 279  ]
+[e $ ! || || || == -> . *U _Config 2 `i -> 0 `i == -> . *U _Config 2 `i -> 1 `i == -> . *U _Config 2 `i -> 2 `i == -> . *U _Config 2 `i -> 3 `i 279  ]
 "29
 [; ;MCAL_Layer/SPI/hal_spi.c: 29:             (Config->spi_mode == 2) || (Config->spi_mode == 3)){
 {
@@ -576,7 +624,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32
 [; ;MCAL_Layer/SPI/hal_spi.c: 32:         else if((Config->spi_mode == 4) || (Config->spi_mode == 5)){
 [e :U 279 ]
-[e $ ! || == -> . *U _Config 0 `i -> 4 `i == -> . *U _Config 0 `i -> 5 `i 281  ]
+[e $ ! || == -> . *U _Config 2 `i -> 4 `i == -> . *U _Config 2 `i -> 5 `i 281  ]
 {
 "33
 [; ;MCAL_Layer/SPI/hal_spi.c: 33:             MSSP_SPI_Slave_Mode_GPIO_PIN_Configurations(Config);
@@ -588,13 +636,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 280 ]
 "36
 [; ;MCAL_Layer/SPI/hal_spi.c: 36:         SSPCON1bits.CKP = Config->spi_config.ClockPolarity;
-[e = . . _SSPCON1bits 0 1 . . *U _Config 1 0 ]
+[e = . . _SSPCON1bits 0 1 . . *U _Config 3 0 ]
 "38
 [; ;MCAL_Layer/SPI/hal_spi.c: 38:         SSPSTATbits.SMP = Config->spi_config.SampleSelect;
-[e = . . _SSPSTATbits 2 7 . . *U _Config 1 1 ]
+[e = . . _SSPSTATbits 2 7 . . *U _Config 3 1 ]
 "40
 [; ;MCAL_Layer/SPI/hal_spi.c: 40:          SSPSTATbits.CKE = Config->spi_config.ClockSelect;
-[e = . . _SSPSTATbits 2 6 . . *U _Config 1 2 ]
+[e = . . _SSPSTATbits 2 6 . . *U _Config 3 2 ]
 "42
 [; ;MCAL_Layer/SPI/hal_spi.c: 42:         MSSP_SPI_Interrupt_Init(Config);
 [e ( _MSSP_SPI_Interrupt_Init (1 _Config ]
@@ -642,6 +690,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "58
 [; ;MCAL_Layer/SPI/hal_spi.c: 58:         (SSPCON1bits.SSPEN = 0);
 [e = . . _SSPCON1bits 0 2 -> -> 0 `i `uc ]
+"61
+[; ;MCAL_Layer/SPI/hal_spi.c: 61:         (PIE1bits.SSPIE = 0);
+[e = . . _PIE1bits 0 3 -> -> 0 `i `uc ]
 "63
 [; ;MCAL_Layer/SPI/hal_spi.c: 63:     }
 }
@@ -785,6 +836,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _MSSP_SPI_ISR ]
 [f ]
+"107
+[; ;MCAL_Layer/SPI/hal_spi.c: 107:     (PIR1bits.SSPIF = 0);
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"108
+[; ;MCAL_Layer/SPI/hal_spi.c: 108:     if(SPI_InterruptHandler){
+[e $ ! != _SPI_InterruptHandler -> -> 0 `i `*F3069 300  ]
+{
+"109
+[; ;MCAL_Layer/SPI/hal_spi.c: 109:         SPI_InterruptHandler();
+[e ( *U _SPI_InterruptHandler ..  ]
+"110
+[; ;MCAL_Layer/SPI/hal_spi.c: 110:     }
+}
+[e :U 300 ]
 "112
 [; ;MCAL_Layer/SPI/hal_spi.c: 112: }
 [e :UE 299 ]
@@ -796,9 +861,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _MSSP_SPI_Interrupt_Init ]
 [v _Config `*CS275 ~T0 @X0 1 r1 ]
 [f ]
+"117
+[; ;MCAL_Layer/SPI/hal_spi.c: 117:     (PIE1bits.SSPIE = 1);
+[e = . . _PIE1bits 0 3 -> -> 1 `i `uc ]
+"118
+[; ;MCAL_Layer/SPI/hal_spi.c: 118:     (PIR1bits.SSPIF = 0);
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"119
+[; ;MCAL_Layer/SPI/hal_spi.c: 119:     SPI_InterruptHandler = Config->MSSP_SPI_InterruptHandler;
+[e = _SPI_InterruptHandler . *U _Config 0 ]
+"135
+[; ;MCAL_Layer/SPI/hal_spi.c: 135:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"136
+[; ;MCAL_Layer/SPI/hal_spi.c: 136:     (INTCONbits.PEIE = 1);
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
 "139
 [; ;MCAL_Layer/SPI/hal_spi.c: 139: }
-[e :UE 300 ]
+[e :UE 301 ]
 }
 "141
 [; ;MCAL_Layer/SPI/hal_spi.c: 141: static void MSSP_SPI_Msster_Mode_GPIO_PIN_Configurations(const SPI_Config *Config){
@@ -811,8 +891,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MCAL_Layer/SPI/hal_spi.c: 142:     Std_ReturnType ret = (Std_ReturnType)0x00;
 [v _ret `uc ~T0 @X0 1 a ]
 [e = _ret -> -> 0 `i `uc ]
-[v F3068 `S273 ~T0 @X0 1 s ]
-[i F3068
+[v F3078 `S273 ~T0 @X0 1 s ]
+[i F3078
 :U ..
 :U ..
 "143
@@ -824,9 +904,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _SPI_SDO `S273 ~T0 @X0 1 a ]
-[e = _SPI_SDO F3068 ]
-[v F3070 `S273 ~T0 @X0 1 s ]
-[i F3070
+[e = _SPI_SDO F3078 ]
+[v F3080 `S273 ~T0 @X0 1 s ]
+[i F3080
 :U ..
 :U ..
 "144
@@ -838,9 +918,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _SPI_SDI `S273 ~T0 @X0 1 a ]
-[e = _SPI_SDI F3070 ]
-[v F3072 `S273 ~T0 @X0 1 s ]
-[i F3072
+[e = _SPI_SDI F3080 ]
+[v F3082 `S273 ~T0 @X0 1 s ]
+[i F3082
 :U ..
 :U ..
 "145
@@ -852,7 +932,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _SPI_CLK `S273 ~T0 @X0 1 a ]
-[e = _SPI_CLK F3072 ]
+[e = _SPI_CLK F3082 ]
 "147
 [; ;MCAL_Layer/SPI/hal_spi.c: 147:     ret = gpio_pin_direction_intialize(&SPI_SDO);
 [e = _ret ( _gpio_pin_direction_intialize (1 -> &U _SPI_SDO `*CS273 ]
@@ -864,7 +944,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _ret ( _gpio_pin_direction_intialize (1 -> &U _SPI_CLK `*CS273 ]
 "150
 [; ;MCAL_Layer/SPI/hal_spi.c: 150: }
-[e :UE 301 ]
+[e :UE 302 ]
 }
 "152
 [; ;MCAL_Layer/SPI/hal_spi.c: 152: static void MSSP_SPI_Slave_Mode_GPIO_PIN_Configurations(const SPI_Config *Config){
@@ -877,8 +957,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MCAL_Layer/SPI/hal_spi.c: 153:     Std_ReturnType ret = (Std_ReturnType)0x00;
 [v _ret `uc ~T0 @X0 1 a ]
 [e = _ret -> -> 0 `i `uc ]
-[v F3077 `S273 ~T0 @X0 1 s ]
-[i F3077
+[v F3087 `S273 ~T0 @X0 1 s ]
+[i F3087
 :U ..
 :U ..
 "154
@@ -890,9 +970,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _SPI_SDO `S273 ~T0 @X0 1 a ]
-[e = _SPI_SDO F3077 ]
-[v F3079 `S273 ~T0 @X0 1 s ]
-[i F3079
+[e = _SPI_SDO F3087 ]
+[v F3089 `S273 ~T0 @X0 1 s ]
+[i F3089
 :U ..
 :U ..
 "155
@@ -904,9 +984,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _SPI_SDI `S273 ~T0 @X0 1 a ]
-[e = _SPI_SDI F3079 ]
-[v F3081 `S273 ~T0 @X0 1 s ]
-[i F3081
+[e = _SPI_SDI F3089 ]
+[v F3091 `S273 ~T0 @X0 1 s ]
+[i F3091
 :U ..
 :U ..
 "156
@@ -918,9 +998,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _SPI_CLK `S273 ~T0 @X0 1 a ]
-[e = _SPI_CLK F3081 ]
-[v F3083 `S273 ~T0 @X0 1 s ]
-[i F3083
+[e = _SPI_CLK F3091 ]
+[v F3093 `S273 ~T0 @X0 1 s ]
+[i F3093
 :U ..
 :U ..
 "157
@@ -932,7 +1012,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _SPI_SS `S273 ~T0 @X0 1 a ]
-[e = _SPI_SS F3083 ]
+[e = _SPI_SS F3093 ]
 "159
 [; ;MCAL_Layer/SPI/hal_spi.c: 159:     ret = gpio_pin_direction_intialize(&SPI_SDO);
 [e = _ret ( _gpio_pin_direction_intialize (1 -> &U _SPI_SDO `*CS273 ]
@@ -944,7 +1024,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _ret ( _gpio_pin_direction_intialize (1 -> &U _SPI_CLK `*CS273 ]
 "163
 [; ;MCAL_Layer/SPI/hal_spi.c: 163:     if(4 == Config->spi_mode){
-[e $ ! == -> 4 `i -> . *U _Config 0 `i 303  ]
+[e $ ! == -> 4 `i -> . *U _Config 2 `i 304  ]
 {
 "164
 [; ;MCAL_Layer/SPI/hal_spi.c: 164:         ret = gpio_pin_direction_intialize(&SPI_SS);
@@ -952,8 +1032,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "165
 [; ;MCAL_Layer/SPI/hal_spi.c: 165:     }
 }
-[e :U 303 ]
+[e :U 304 ]
 "166
 [; ;MCAL_Layer/SPI/hal_spi.c: 166: }
-[e :UE 302 ]
+[e :UE 303 ]
 }

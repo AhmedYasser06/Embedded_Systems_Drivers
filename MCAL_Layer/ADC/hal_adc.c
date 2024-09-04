@@ -183,7 +183,7 @@ Std_ReturnType ADC_GetConversionResult(const adc_conf_t *_adc, adc_result_t *con
     if((NULL == _adc) || (NULL == conversion_result)){
         ret = E_NOT_OK;
     }
-    else{
+    else{  
         if(ADC_RESULT_RIGHT == _adc->result_format){
             *conversion_result = (adc_result_t)((ADRESH << 8) + ADRESL);
         }

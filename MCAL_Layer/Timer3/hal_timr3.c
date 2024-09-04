@@ -14,7 +14,7 @@ static uint16 timer3_preload = ZERO_INIT;
 
 static inline void Timer3_Mode_Select(const timer3_t *_timer);
 
-Std_ReturnType Timer3_Init(const timer3_t *_timer){
+  Std_ReturnType Timer3_Init(const timer3_t *_timer){
     Std_ReturnType ret = E_NOT_OK;
     if(NULL == _timer){
         ret = E_NOT_OK;

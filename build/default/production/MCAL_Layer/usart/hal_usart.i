@@ -4872,35 +4872,35 @@ static void EUSART_Baud_Rate_Calculation(const usart_t *_eusart){
             TXSTAbits.SYNC = 0;
             TXSTAbits.BRGH = 0;
             BAUDCONbits.BRG16 = 0;
-            Baud_Rate_Temp = ((4000000UL / (float)_eusart->baudrate) / 64) - 1;
+            Baud_Rate_Temp = ((8000000UL / (float)_eusart->baudrate) / 64) - 1;
             break;
         case BAUDRATE_ASYN_8BIT_HIGH_SPEED:
             TXSTAbits.SYNC = 0;
             TXSTAbits.BRGH = 1;
             BAUDCONbits.BRG16 = 0;
-            Baud_Rate_Temp = ((4000000UL / (float)_eusart->baudrate) / 16) - 1;
+            Baud_Rate_Temp = ((8000000UL / (float)_eusart->baudrate) / 16) - 1;
             break;
         case BAUDRATE_ASYN_16BIT_lOW_SPEED:
             TXSTAbits.SYNC = 0;
             TXSTAbits.BRGH = 0;
             BAUDCONbits.BRG16 = 1;
-            Baud_Rate_Temp = ((4000000UL / (float)_eusart->baudrate) / 16) - 1;
+            Baud_Rate_Temp = ((8000000UL / (float)_eusart->baudrate) / 16) - 1;
             break;
         case BAUDRATE_ASYN_16BIT_HIGH_SPEED:
             TXSTAbits.SYNC = 0;
             TXSTAbits.BRGH = 1;
             BAUDCONbits.BRG16 = 1;
-            Baud_Rate_Temp = ((4000000UL / (float)_eusart->baudrate) / 4) - 1;
+            Baud_Rate_Temp = ((8000000UL / (float)_eusart->baudrate) / 4) - 1;
             break;
         case BAUDRATE_SYN_8BIT:
             TXSTAbits.SYNC = 1;
             BAUDCONbits.BRG16 = 0;
-            Baud_Rate_Temp = ((4000000UL / (float)_eusart->baudrate) / 4) - 1;
+            Baud_Rate_Temp = ((8000000UL / (float)_eusart->baudrate) / 4) - 1;
             break;
         case BAUDRATE_SYN_16BIT:
             TXSTAbits.SYNC = 1;
             BAUDCONbits.BRG16 = 1;
-            Baud_Rate_Temp = ((4000000UL / (float)_eusart->baudrate) / 4) - 1;
+            Baud_Rate_Temp = ((8000000UL / (float)_eusart->baudrate) / 4) - 1;
             break;
         default : ;
     }

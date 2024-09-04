@@ -4735,7 +4735,7 @@ static uint16 timer3_preload = 0;
 
 static __attribute__((inline)) void Timer3_Mode_Select(const timer3_t *_timer);
 
-Std_ReturnType Timer3_Init(const timer3_t *_timer){
+  Std_ReturnType Timer3_Init(const timer3_t *_timer){
     Std_ReturnType ret = (Std_ReturnType)0x00;
     if(((void*)0) == _timer){
         ret = (Std_ReturnType)0x00;

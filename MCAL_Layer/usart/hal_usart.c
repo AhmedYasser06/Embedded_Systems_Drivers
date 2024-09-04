@@ -32,7 +32,7 @@ Std_ReturnType EUSART_ASYNC_Init(const usart_t *_eusart){
         EUSART_ASYNC_RX_Init(_eusart);
         RCSTAbits.SPEN = EUSART_MODULE_ENABLE;  /* Enable EUSART Module */
         ret = E_OK;
-    }
+    } 
     return ret;
 }
 
