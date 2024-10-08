@@ -1,8 +1,8 @@
 /* 
  * File:   hal_gpio_cfg.h
- * Author: Ahmed.Elghafar
- *
- * Created on December 10, 2020, 6:12 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:19 PM
  */
 
 #ifndef HAL_GPIO_CFG_H

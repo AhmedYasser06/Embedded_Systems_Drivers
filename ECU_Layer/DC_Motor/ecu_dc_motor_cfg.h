@@ -1,8 +1,8 @@
 /* 
  * File:   ecu_dc_motor_cfg.h
- * Author: Ahmed.Elghafar
- *
- * Created on January 8, 2021, 10:48 AM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 4, 2024, 6:02 PM
  */
 
 #ifndef ECU_DC_MOTOR_CFG_H

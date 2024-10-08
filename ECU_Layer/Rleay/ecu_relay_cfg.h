@@ -1,8 +1,8 @@
 /* 
  * File:   ecu_relay_cfg.h
- * Author: Ahmed.Elghafar
- * https://www.linkedin.com/in/ahmedabdelghafarmohammed/
- * Created on January 7, 2021, 10:22 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 7, 2024, 8:47 PM
  */
 
 #ifndef ECU_RELAY_CFG_H

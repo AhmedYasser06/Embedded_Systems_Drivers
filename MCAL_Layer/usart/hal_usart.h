@@ -1,6 +1,8 @@
 /* 
  * File:   hal_usart.h
- * Author: Ahmed Abd El-Ghafar
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:56 PM
  */
 
 #ifndef HAL_USART_H

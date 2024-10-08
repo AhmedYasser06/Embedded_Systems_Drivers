@@ -29,6 +29,7 @@ MCAL_Layer/ADC/hal_adc.h  \
 MCAL_Layer/ADC/../../MCAL_Layer/Interrupt/mcal_internal_interrupt.h  \
 MCAL_Layer/ADC/hal_adc_cfg.h  \
 MCAL_Layer/SPI/hal_spi.h  \
+MCAL_Layer/Timer0/hal_timr0.h  \
 MCAL_Layer/Timer1/hal_timr1.h  \
 MCAL_Layer/Timer2/hal_timr2.h  \
 MCAL_Layer/Timer3/hal_timr3.h  \

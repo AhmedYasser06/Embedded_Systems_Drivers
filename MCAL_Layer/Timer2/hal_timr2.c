@@ -1,8 +1,8 @@
 /* 
  * File:   hal_timr2.c
- * Author: Ahmed Abd El-Ghafar
- * https://www.linkedin.com/in/ahmedabdelghafarmohammed/
- * Created on May 13, 2021, 11:30 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:56 PM
  */
 
 #include "hal_timr2.h"

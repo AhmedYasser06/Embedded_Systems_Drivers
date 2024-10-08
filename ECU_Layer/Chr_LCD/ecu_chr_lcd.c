@@ -1,8 +1,8 @@
 /* 
  * File:   ecu_chr_lcd.c
- * Author: Ahmed.Elghafar
- * https://www.linkedin.com/in/ahmedabdelghafarmohammed/
- * Created on February 9, 2021, 9:48 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:56 PM
  */
 
 #include "ecu_chr_lcd.h"

@@ -1,8 +1,8 @@
 /* 
  * File:   hal_adc.h
- * Author: Ahmed Abd El-Ghafar
- * https://www.linkedin.com/in/ahmedabdelghafarmohammed/
- * Created on March 26, 2021, 7:21 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:02 PM
  */
 
 #ifndef HAL_ADC_H

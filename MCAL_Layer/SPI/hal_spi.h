@@ -1,6 +1,8 @@
 /* 
  * File:   hal_spi.h
- * Author: Ahmed Abd El-Ghafar
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:56 PM
  */
 
 #ifndef HAL_SPI_H
@@ -14,12 +16,12 @@
 
 /* ----------------- Macro Declarations -----------------*/
 /* Master Synchronous Serial Port Mode Select */
-#define SPI_MASTER_FOSC_DIV4   0 /* SPI Slave mode, clock = SCK pin, SS pin control disabled, SS can be used as I/O pin */
-#define SPI_MASTER_FOSC_DIV16  1 /* SPI Slave mode, clock = SCK pin, SS pin control enabled */
-#define SPI_MASTER_FOSC_DIV64  2 /* SPI Master mode, clock = TMR2 output/2 */
-#define SPI_MASTER_FOSC_TMR2   3 /* SPI Master mode, clock = FOSC/64 */
-#define SPI_SLAVE_SS_ENABLE    4 /* SPI Master mode, clock = FOSC/16 */
-#define SPI_SLAVE_SS_DISABLE   5 /* SPI Master mode, clock = FOSC/4 */
+#define SPI_MASTER_FOSC_DIV4   0 /* SPI Master mode, clock = FOSC/4 */
+#define SPI_MASTER_FOSC_DIV16  1 /* SPI Master mode, clock = FOSC/16 */
+#define SPI_MASTER_FOSC_DIV64  2 /* SPI Master mode, clock = FOSC/64 */
+#define SPI_MASTER_FOSC_TMR2   3 /* SPI Master mode, clock = TMR2 output/2 */
+#define SPI_SLAVE_SS_ENABLE    4 /* SPI Slave mode, clock = SCK pin, SS pin control enabled */
+#define SPI_SLAVE_SS_DISABLE   5 /* SPI Slave mode, clock = SCK pin, SS pin control disabled, SS can be used as I/O pin */
 
 /* Clock Polarity Select */
 #define SPI_IDLE_STATE_HIGH_LEVEL   1 /* Idle state for clock is a high level */

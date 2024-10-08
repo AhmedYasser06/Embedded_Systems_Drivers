@@ -1,8 +1,8 @@
 /* 
  * File:   mcal_internal_interrupt.c
- * Author: Ahmed.Elghafar
- *
- * Created on February 14, 2021, 11:52 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:56 PM
  */
 
 #include "mcal_internal_interrupt.h"

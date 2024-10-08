@@ -1,8 +1,8 @@
 /* 
  * File:   device_config.h
- * Author: Ahmed.Elghafar
- *
- * Created on November 28, 2020, 10:29 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:19 PM
  */
 
 #ifndef DEVICE_CONFIG_H

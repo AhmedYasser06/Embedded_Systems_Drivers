@@ -1,8 +1,8 @@
 /* 
  * File:   ecu_led_cfg.h
- * Author: Ahmed.Elghafar
- * https://www.linkedin.com/in/ahmedabdelghafarmohammed/
- * Created on December 18, 2020, 3:55 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 5, 2024, 8:22 PM
  */
 
 #ifndef ECU_LED_CFG_H

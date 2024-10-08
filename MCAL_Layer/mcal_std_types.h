@@ -1,8 +1,8 @@
 /* 
  * File:   mcal_std_types.h
- * Author: Ahmed.Elghafar
- * https://www.linkedin.com/in/ahmedabdelghafarmohammed/
- * Created on November 28, 2020, 9:42 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:19 PM
  */
 
 #ifndef MCAL_STD_TYPES_H

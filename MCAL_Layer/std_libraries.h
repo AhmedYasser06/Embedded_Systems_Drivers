@@ -1,8 +1,8 @@
 /* 
  * File:   std_libraries.h
- * Author: Ahmed.Elghafar
- *
- * Created on November 28, 2020, 9:43 PM
+ * Author: Ahmed Yasser
+ * https://www.linkedin.com/in/ahmed-yasser-b664b6255/
+ * Created on July 1, 2024, 9:56 PM
  */
 
 #ifndef STD_LIBRARIES_H
